@@ -1,0 +1,8 @@
+language: ruby
+script: bundle exec middleman build
+deploy:
+  provider: script
+  script: scripts/deploy.sh
+  on:
+    repo: big-burrito/big-burrito
+    branch: master
