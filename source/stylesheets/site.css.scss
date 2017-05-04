@@ -1,24 +1,31 @@
+@import 'normalize';
+@import '//cloud.typography.com/7097472/6858172/css/fonts.css';
+
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
 }
 
-a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
+h1 {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 2rem 0;
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+h2 {
+  font-size: 1rem;
+  margin: .5rem 2.15rem 2rem;
+}
+
+.content {
+  display: block;
+  margin: 9rem auto;
+  width: 29rem;
+}
+
+.logo {
+  float: left;
+  width: 8rem;
+  height: 8rem;
+  margin: -1.5rem 2rem 0;
 }
