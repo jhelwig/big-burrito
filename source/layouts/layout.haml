@@ -5,8 +5,23 @@
     %meta{ charset: 'utf-8' }
     %meta{ 'http-equiv': 'x-ua-compatible', content: 'ie=edge' }
     %meta{ name: 'viewport', content: 'width=device-width', 'initial-scale': '1', 'shrink-to-fit': 'no' }
-    %title= current_page.data.title || "Big Burrito - A FFXIV Free Company on Hyperion"
-    = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
+    %title= current_page.data.title || 'Big Burrito - A FFXIV Free Company on Hyperion'
+    = stylesheet_link_tag 'site'
   %body
-    = yield
+
+    .header
+      - if current_page.data.section
+        %h3= current_page.data.section
+      = image_tag 'big-burrito-logo.svg', class: 'logo'
+      %h1 Big Burrito
+      %h2 A Final Fantasy XIV free company on Hyperion.
+
+    .document
+      %nav
+        = current_link_to 'Home', '/'
+
+      .content
+        = yield
+
+    = javascript_include_tag 'jquery-3.2.1.min.js'
+    = javascript_include_tag 'site'
