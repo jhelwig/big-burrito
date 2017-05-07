@@ -5,6 +5,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :aria_current
 activate :livereload
 
 # Layouts
