@@ -1,5 +1,5 @@
 language: ruby
-script: bundle exec middleman build
+script: bundle exec middleman build --verbose
 deploy:
   provider: script
   script: scripts/deploy.sh
