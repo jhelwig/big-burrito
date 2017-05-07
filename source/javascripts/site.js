@@ -9,9 +9,9 @@ function parseEmailAddress(text) {
 }
 
 function replaceEmail(index, element) {
-  let $element = $(element);
-  let emailAddress = parseEmailAddress($element.text());
-  let $newElement = $(`<a href=mailto:${emailAddress}>${emailAddress}</a>`);
+  var $element = $(element);
+  var emailAddress = parseEmailAddress($element.text());
+  var $newElement = $(`<a href=mailto:${emailAddress}>${emailAddress}</a>`);
 
   $element.replaceWith($newElement);
 }
