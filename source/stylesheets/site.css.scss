@@ -1,31 +1,13 @@
+// requirements
+@import 'variables';
 @import 'normalize';
 @import '//cloud.typography.com/7097472/6858172/css/fonts.css';
 
-body {
-  font-family: 'Sentinel SSm A', 'Sentinel SSm B', serif;
-}
+// global
+@import 'typography';
 
-h1 {
-  font-family: 'Gotham SSm A', 'Gotham SSm B';
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 2rem 2rem 0;
-}
-
-h2 {
-  font-size: 1rem;
-  margin: .5rem 0 2rem 12.15rem;
-}
-
-.content {
-  display: block;
-  margin: 9rem auto;
-  width: 29rem;
-}
-
-.logo {
-  float: left;
-  height: 8rem;
-  margin: -1.5rem 2rem 0;
-  width: 8rem;
-}
+// components
+@import 'content';
+@import 'document';
+@import 'header';
+@import 'nav';
