@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Big Burrito Free Company//big-burrito.com//EN
+<% data.events.each do |event| -%>
+BEGIN:VEVENT
+UID:<%= ical_generate_uid event %>
+SUMMARY:<%= event.title %>
+<% if event.description -%>
+DESCRIPTION:<%= ical_format_description event.description %>
+<% end -%>
+CLASS:PUBLIC
+DTSTART:<%= ical_datetime_to_stamp event.start %>
+<% if event.end -%>
+DTEND:<%= ical_datetime_to_stamp event.end %>
+<% end -%>
+DTSTAMP:<%= ical_datetime_to_stamp Time.now %>
+END:VEVENT
+<% end -%>
+END:VCALENDAR

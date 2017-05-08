@@ -1,0 +1,20 @@
+# This should be an array of events, and is used to populate both the
+# /events.ics file, and the listing on the site. The end, and
+# description are optional properties, title, and start are
+# required. Start and end are any value that Ruby's DateTime.parse can
+# handle, and should really include timezone information.
+#
+# - title: Example event
+#   start: 2017-06-20T18:00:00-07:00
+#   end: 2017-06-20T19:00:00-07:00
+#   description: |
+#     Multiline
+#     description
+#     goes
+#     here
+
+---
+- title: Stormblood release
+  start: 2017-06-20T18:00:00-07:00
+- title: Stormblood early access
+  start: 2017-06-16T18:00:00-07:00
